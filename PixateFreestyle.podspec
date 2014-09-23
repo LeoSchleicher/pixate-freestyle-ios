@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   }
   s.author       = { "Pixate" => "info@pixate.com" }
   s.platform     = :ios, '5.0'
-  s.source       = { :http => "https://github.com/Pixate/pixate-freestyle-ios/releases/download/v#{s.version}/PixateFreestyle.framework.zip" }
+  s.source       = { :http => "https://github.com/AppGyver/pixate-freestyle-ios/releases/download/v#{s.version}/PixateFreestyle.framework.zip" }
   s.source_files = 'PixateFreestyle.framework/Versions/A/Headers/*.h'
   s.preserve_paths = 'PixateFreestyle.framework'
   s.frameworks = 'CoreText', 'QuartzCore', 'UIKit', 'CoreGraphics', 'PixateFreestyle'
