@@ -19,9 +19,6 @@
 # limitations under the License.
 #
 
-# This script builds the FacebookSDK.framework that is distributed at
-# https://github.com/facebook/facebook-ios-sdk/downloads/FacebookSDK.framework.tgz
-
 . ${PX_FREESTYLE_SCRIPT:-$(dirname $0)}/common.sh
 
 # process options, valid arguments -c [Debug|Release] -n
@@ -92,11 +89,11 @@ function xcode_build_target() {
     || die "XCode build failed for platform: ${1}."
 }
 
-xcode_build_target "iphonesimulator7.1" "${BUILDCONFIGURATION}" "i386" "6.1" "i386"
-xcode_build_target "iphonesimulator7.1" "${BUILDCONFIGURATION}" "x86_64" "7.0" "x86_64"
-xcode_build_target "iphoneos7.1" "${BUILDCONFIGURATION}" "armv7" "6.1" "Arm"
-xcode_build_target "iphoneos7.1" "${BUILDCONFIGURATION}" "armv7s" "6.1" "Arm7S"
-xcode_build_target "iphoneos7.1" "${BUILDCONFIGURATION}" "arm64" "7.0" "Arm64"
+xcode_build_target "iphonesimulator8.0" "${BUILDCONFIGURATION}" "i386" "6.1" "i386"
+xcode_build_target "iphonesimulator8.0" "${BUILDCONFIGURATION}" "x86_64" "7.0" "x86_64"
+xcode_build_target "iphoneos8.0" "${BUILDCONFIGURATION}" "armv7" "6.1" "Arm"
+xcode_build_target "iphoneos8.0" "${BUILDCONFIGURATION}" "armv7s" "6.1" "Arm7S"
+xcode_build_target "iphoneos8.0" "${BUILDCONFIGURATION}" "arm64" "7.0" "Arm64"
 
 # -----------------------------------------------------------------------------
 # Merge lib files for different platforms into universal binary
@@ -136,6 +133,10 @@ mkdir $PX_FREESTYLE_FRAMEWORK/Versions/A/Resources
   $PX_FREESTYLE_BUILD/${BUILDCONFIGURATION}Arm/pixate-freestyle/*.h \
   $PX_FREESTYLE_FRAMEWORK/Versions/A/Headers \
   || die "Error building framework while copying SDK headers"
+\cp \
+  $PX_FREESTYLE_SRC/../submodules/pixate-expression-machine/src/ExpressionMachine/Common/Parsing/*.h \
+  $PX_FREESTYLE_FRAMEWORK/Versions/A/Headers \
+  || die "Error building framework while copying ExpressionMachine headers"
 \cp \
   $PX_FREESTYLE_UNIVERSAL_BINARY \
   $PX_FREESTYLE_FRAMEWORK/Versions/A/PixateFreestyle \

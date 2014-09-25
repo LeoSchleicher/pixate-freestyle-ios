@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PixateFreestyle"
-  s.version      = "2.1.1"
+  s.version      = "2.1.4-appgyver"
   s.summary      = "Style your iOS app with CSS, using 100% native code and no webviews."
   s.description  = <<-DESC
                    Pixate is an iOS framework that allows you to style your application using stylesheets and a CSS-like syntax. Pixate lets you build  beautiful applications with less code and more flexibility by using familiar CSS markup to style native controls and components. Free up your team to focus on creating amazing user experiences throughout the design and development cycle.
@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
               limitations under the License.
              LICENSE
   }
-  s.author       = { "Pixate" => "info@pixate.com" }
-  s.platform     = :ios, '5.0'
+  s.author       = { "AppGyver" => "contact@appgyver.com" }
+  s.platform     = :ios, '7.0'
   s.source       = { :http => "https://github.com/AppGyver/pixate-freestyle-ios/releases/download/v#{s.version}/PixateFreestyle.framework.zip" }
   s.source_files = 'PixateFreestyle.framework/Versions/A/Headers/*.h'
   s.preserve_paths = 'PixateFreestyle.framework'
