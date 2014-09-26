@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
              LICENSE
   }
   s.author       = { "AppGyver" => "contact@appgyver.com" }
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.source       = { :http => "https://github.com/AppGyver/pixate-freestyle-ios/releases/download/v#{s.version}/PixateFreestyle.framework.zip" }
   s.source_files = 'PixateFreestyle.framework/Versions/A/Headers/*.h'
   s.preserve_paths = 'PixateFreestyle.framework'
