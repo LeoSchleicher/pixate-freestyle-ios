@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "PixateFreestyle"
+  s.name         = "PixateFreestyle-AppGyver"
   s.version      = "2.1.4-appgyver"
   s.summary      = "Style your iOS app with CSS, using 100% native code and no webviews."
   s.description  = <<-DESC
