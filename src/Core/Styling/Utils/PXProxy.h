@@ -29,7 +29,7 @@
 @property (nonatomic, weak) id baseObject;
 @property (nonatomic, weak) id overridingObject;
 
-- (id)initWithBaseOject:(id)base overridingObject:(id)overrider;
+- (id)initWithBaseObject:(id)base overridingObject:(id)overrider;
 
 @end
 

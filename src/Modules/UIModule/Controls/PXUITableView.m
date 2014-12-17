@@ -104,7 +104,7 @@ static const char PX_DELEGATE_PROXY; // the proxy for the old delegate
     
     if(proxy == nil)
     {
-        proxy = [[PXProxy alloc] initWithBaseOject:nil overridingObject:[self pxDelegate]];
+        proxy = [[PXProxy alloc] initWithBaseObject:nil overridingObject:[self pxDelegate]];
         objc_setAssociatedObject(self, &PX_DELEGATE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
@@ -133,7 +133,7 @@ static const char PX_DELEGATE_PROXY; // the proxy for the old delegate
  
  if(proxy == nil)
  {
- proxy = [[PXProxy alloc] initWithBaseOject:nil overridingObject:[self pxDelegate]];
+ proxy = [[PXProxy alloc] initWithBaseObject:nil overridingObject:[self pxDelegate]];
  objc_setAssociatedObject(self, &PX_DATASOURCE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
  }
  

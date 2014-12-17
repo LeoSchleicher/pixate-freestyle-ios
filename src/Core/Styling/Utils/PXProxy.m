@@ -30,7 +30,7 @@
 
 #pragma mark - Initializer
 
-- (id)initWithBaseOject:(id)base overridingObject:(id)overrider
+- (id)initWithBaseObject:(id)base overridingObject:(id)overrider
 {
     self.baseObject = base;
     self.overridingObject = overrider;
