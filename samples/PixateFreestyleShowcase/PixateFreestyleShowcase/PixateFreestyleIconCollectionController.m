@@ -7,7 +7,7 @@
 //
 
 #import "PixateFreestyleIconCollectionController.h"
-#import <PixateFreestyle/PixateFreestyle.h>
+#import "PixateFreestyle.h"
 #import "ArrayDataSource.h"
 #import "PixateFreestyleIconList.h"
 

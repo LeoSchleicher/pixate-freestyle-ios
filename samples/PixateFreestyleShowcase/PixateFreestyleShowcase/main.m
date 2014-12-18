@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <PixateFreestyle/PixateFreestyle.h>
+#import "PixateFreestyle.h"
 #import "PixateFreestyleAppDelegate.h"
 
 int main(int argc, char * argv[])

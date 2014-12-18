@@ -8,7 +8,7 @@
 
 #import "PixateFreestyleTableViewController.h"
 #import "PixateFreestyleTableDetailController.h"
-#import <PixateFreestyle/PixateFreestyle.h>
+#import "PixateFreestyle.h"
 
 @interface PixateFreestyleTableViewController ()
 {

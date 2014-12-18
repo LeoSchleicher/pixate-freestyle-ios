@@ -1381,3 +1381,10 @@ table-view-headerfooter-view text-label {
   text-transform: uppercase;
   color: white;
   font-size: 12pt; }
+
+.collection-view-cell:nth-child(3n) {
+    background-color: red;
+}
+.collection-view-cell:nth-child(3n) .label {
+    color: blue;
+}
