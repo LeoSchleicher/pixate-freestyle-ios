@@ -29,6 +29,7 @@
 #import "PXStylesheet-Private.h"
 #import "UIView+PXStyling.h"
 #import "PXStylesheetParser.h"
+#import "PXMediaGroup.h"
 #import "PXStyleUtils.h"
 #import "PixateFreestyleConfiguration.h"
 #import "PXStylerContext.h"
@@ -126,16 +127,18 @@
 
 + (NSArray *)selectFromStyleable:(id<PXStyleable>)styleable usingSelector:(NSString *)source
 {
-    PXStylesheetParser *parser = [[PXStylesheetParser alloc] init];
-    id<PXSelector> selector = [parser parseSelectorString:source];
-    NSMutableArray *result = nil;
-
-    if (selector && parser.errors.count == 0)
+    PXStylesheetParser *parser = [PXStylesheetParser new];
+    PXStylesheet *styleSheet = [parser parse:[NSString stringWithFormat:@"%@ {}", source]
+                                  withOrigin:PXStylesheetOriginUser];
+    PXRuleSet *mergedRuleSet = [PXRuleSet ruleSetWithMergedRuleSets:[[styleSheet activeMediaGroup] ruleSets]];
+    
+    NSMutableArray *result;
+    if (source && parser.errors.count == 0)
     {
         result = [NSMutableArray array];
-
+        
         [PXStyleUtils enumerateStyleableAndDescendants:styleable usingBlock:^(id<PXStyleable> obj, BOOL *stop, BOOL *stopDescending) {
-            if ([selector matches:obj])
+            if ([mergedRuleSet matches:obj])
             {
                 [result addObject:obj];
             }

@@ -6,6 +6,11 @@
  * http://opensource.org/licenses/MIT
  *
  */
+
+freestyle-config {
+    parse-error-destination: console;
+}
+
 /* Variables */
 /*
  * Variables
@@ -27,6 +32,8 @@
  * --------------------------------
  */
 /* Containers */
+
+
 .container {
   border: 1px solid #d8d9dc; }
 
@@ -1381,10 +1388,3 @@ table-view-headerfooter-view text-label {
   text-transform: uppercase;
   color: white;
   font-size: 12pt; }
-
-.collection-view-cell:nth-child(3n) {
-    background-color: red;
-}
-.collection-view-cell:nth-child(3n) .label {
-    color: blue;
-}

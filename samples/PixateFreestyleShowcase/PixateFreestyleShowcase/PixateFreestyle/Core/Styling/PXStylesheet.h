@@ -24,6 +24,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class PXMediaGroup;
+
 //extern NSString *const PXStylesheetDidChangeNotification;
 
 /**
@@ -49,6 +51,11 @@ typedef enum
  *  specificity calculations.
  */
 @property (readonly, nonatomic) PXStylesheetOrigin origin;
+
+/**
+ *  A PXMediaGroup of PXRuleSets that currently active in this stylesheet.
+ */
+@property (readonly, nonatomic) PXMediaGroup *activeMediaGroup;
 
 /**
  *  A nonmutable array of error strings that were encountered when parsing the source of this stylesheet

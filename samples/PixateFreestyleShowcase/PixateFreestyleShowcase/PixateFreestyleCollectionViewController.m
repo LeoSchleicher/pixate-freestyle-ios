@@ -7,6 +7,7 @@
 //
 
 #import "PixateFreestyleCollectionViewController.h"
+#import "PixateFreestyle.h"
 
 @interface PixateFreestyleCollectionViewController ()
     
@@ -26,9 +27,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
     
-    // Initialize 
+    // Initialize
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    [PixateFreestyle styleSheetFromSource:@".collection-view-cell:nth-child(3n) {background-color: red}" withOrigin:PXStylesheetOriginUser];
+    [self performSelector:@selector(applyStyling) withObject:nil afterDelay:2];
+}
+
+- (void)applyStyling
+{
+    [PixateFreestyle styleSheetFromSource:@".collection-view-cell:nth-child(3n-1) {background-color: green}" withOrigin:PXStylesheetOriginUser];
 }
 
 - (void)didReceiveMemoryWarning

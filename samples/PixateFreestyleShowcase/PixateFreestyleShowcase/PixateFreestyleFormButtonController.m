@@ -7,6 +7,7 @@
 //
 
 #import "PixateFreestyleFormButtonController.h"
+#import "PixateFreestyle.h"
 
 @interface PixateFreestyleFormButtonController ()
 
@@ -49,6 +50,12 @@
     CGFloat navBarHeight = [[self.navigationController navigationBar] frame].size.height;
     CGFloat height = screenBound.size.height - tabBarHeight - navBarHeight;
     self.scrollView.frame = CGRectMake(0, 0, width, height);
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSLog(@"");
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField

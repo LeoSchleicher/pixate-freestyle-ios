@@ -191,6 +191,11 @@ static int ddLogLevel = LOG_LEVEL_WARN;
     return (mediaGroups_) ? [NSArray arrayWithArray:mediaGroups_] : nil;
 }
 
+- (PXMediaGroup *)activeMediaGroup
+{
+    return activeMediaGroup_;
+}
+
 + (PXStylesheet *)currentApplicationStylesheet
 {
 	return currentApplicationStylesheet;
