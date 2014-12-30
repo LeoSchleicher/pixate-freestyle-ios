@@ -68,7 +68,7 @@
 {
     id baseObject = collectionView.dataSource;
     
-    while ([baseObject isProxy])
+    if ([baseObject isProxy])
         baseObject = [((PXProxy *) baseObject) baseObject];
     
     return [baseObject collectionView:collectionView numberOfItemsInSection:section];
@@ -79,7 +79,7 @@
 {
     id baseObject = collectionView.dataSource;
     
-    while ([baseObject isProxy])
+    if ([baseObject isProxy])
         baseObject = [((PXProxy *) baseObject) baseObject];
 
     
