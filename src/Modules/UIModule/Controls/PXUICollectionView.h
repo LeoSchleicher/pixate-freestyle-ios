@@ -46,6 +46,11 @@
  *  - cell-height: <length>
  *
  */
+
+extern NSString * const PX_CV_DELEGATE; // the new delegate (and datasource)
+extern NSString * const PX_CV_DELEGATE_PROXY; // the proxy for the old delegate
+extern NSString * const PX_CV_DATASOURCE_PROXY; // the proxy for the old datasource
+
 @interface PXUICollectionView : UICollectionView
 
 @end

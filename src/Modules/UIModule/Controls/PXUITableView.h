@@ -52,6 +52,11 @@
  *  - PXAnimationStyler
  *
  */
+
+extern NSString * const PX_DELEGATE; // the new delegate (and datasource)
+extern NSString * const PX_DELEGATE_PROXY; // the proxy for the old delegate
+//extern NSString * const PX_DATASOURCE_PROXY; // the proxy for the old datasource
+
 @interface PXUITableView : UITableView
 
 @end
