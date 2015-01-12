@@ -46,9 +46,9 @@
 // Optimization cached value
 static Class uiPickerTableViewClass;
 
-static const char PX_DELEGATE; // the new delegate (and datasource)
-static const char PX_DELEGATE_PROXY; // the proxy for the old delegate
-//static const char PX_DATASOURCE_PROXY; // the proxy for the old datasource
+NSString *const PX_DELEGATE  = @"PXDelegate";
+NSString *const PX_DELEGATE_PROXY  = @"PXDelegateProxy";
+//NSString *const PX_DATASOURCE_PROXY  = @"PXDatasourceProxy";
 
 @implementation UITableView (PXFreestyle)
 

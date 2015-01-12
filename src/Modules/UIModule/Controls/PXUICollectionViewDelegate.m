@@ -23,6 +23,7 @@
 //
 
 #import "PXUICollectionViewDelegate.h"
+#import "PXUICollectionView.h"
 #import "PXProxy.h"
 #import "PXStyleUtils.h"
 
@@ -66,10 +67,8 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    id baseObject = collectionView.dataSource;
-    
-    if ([baseObject isProxy])
-        baseObject = [((PXProxy *) baseObject) baseObject];
+    PXProxy *proxy = objc_getAssociatedObject(collectionView, &PX_CV_DATASOURCE_PROXY);
+    id baseObject = proxy.baseObject;
     
     return [baseObject collectionView:collectionView numberOfItemsInSection:section];
 }
@@ -77,11 +76,9 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    id baseObject = collectionView.dataSource;
     
-    if ([baseObject isProxy])
-        baseObject = [((PXProxy *) baseObject) baseObject];
-
+    PXProxy *proxy = objc_getAssociatedObject(collectionView, &PX_CV_DATASOURCE_PROXY);
+    id baseObject = proxy.baseObject;
     
     // Make sure the base object has implemented the call
     if([baseObject respondsToSelector:@selector(collectionView:cellForItemAtIndexPath:)] == NO)
@@ -121,12 +118,8 @@
     // Set a default value in case we find nothing (per apple docs)
     CGSize itemSize = CGSizeMake(50, 50);
 
-    id baseObject = collectionView.delegate;
-    
-    if([baseObject isProxy])
-    {
-        baseObject = [((PXProxy *) collectionView.delegate) baseObject];
-    }
+    PXProxy *proxy = objc_getAssociatedObject(collectionView, &PX_CV_DELEGATE_PROXY);
+    id baseObject = proxy.baseObject;
 
     // See if the base object implemented this call and if so, get the output
     if([baseObject respondsToSelector:@selector(collectionView:layout:sizeForItemAtIndexPath:)])

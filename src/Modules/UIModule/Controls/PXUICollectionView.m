@@ -46,9 +46,9 @@
 #import "PXUICollectionViewDelegate.h"
 #import "NSObject+PXSwizzle.h"
 
-static const char PX_DELEGATE; // the new delegate (and datasource)
-static const char PX_DELEGATE_PROXY; // the proxy for the old delegate
-static const char PX_DATASOURCE_PROXY; // the proxy for the old datasource
+NSString *const PX_CV_DELEGATE  = @"PXCVDelegate"; // the new delegate (and datasource)
+NSString *const PX_CV_DELEGATE_PROXY  = @"PXCVDelegateProxy"; // the proxy for the old delegate
+NSString *const PX_CV_DATASOURCE_PROXY  = @"PXCVDatasourceProxy"; // the proxy for the old datasource
 
 @implementation UICollectionView (PXFreestyle)
 
@@ -102,12 +102,12 @@ static const char PX_DATASOURCE_PROXY; // the proxy for the old datasource
 
 - (PXUICollectionViewDelegate *)pxDelegate
 {
-    id delegate = objc_getAssociatedObject(self, &PX_DELEGATE);
+    id delegate = objc_getAssociatedObject(self, &PX_CV_DELEGATE);
     
     if(delegate == nil)
     {
         delegate = [[PXUICollectionViewDelegate alloc] init];
-        objc_setAssociatedObject(self, &PX_DELEGATE, delegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, &PX_CV_DELEGATE, delegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
     return delegate;
@@ -115,12 +115,12 @@ static const char PX_DATASOURCE_PROXY; // the proxy for the old datasource
 
 - (id<UICollectionViewDelegate>)pxDelegateProxy
 {
-    id proxy = objc_getAssociatedObject(self, &PX_DELEGATE_PROXY);
+    id proxy = objc_getAssociatedObject(self, &PX_CV_DELEGATE_PROXY);
     
     if(proxy == nil)
     {
         proxy = [[PXProxy alloc] initWithBaseObject:nil overridingObject:[self pxDelegate]];
-        objc_setAssociatedObject(self, &PX_DELEGATE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, &PX_CV_DELEGATE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
     return proxy;
@@ -128,12 +128,12 @@ static const char PX_DATASOURCE_PROXY; // the proxy for the old datasource
 
 - (id<UICollectionViewDataSource>)pxDatasourceProxy
 {
-    id proxy = objc_getAssociatedObject(self, &PX_DATASOURCE_PROXY);
+    id proxy = objc_getAssociatedObject(self, &PX_CV_DATASOURCE_PROXY);
     
     if(proxy == nil)
     {
         proxy = [[PXProxy alloc] initWithBaseObject:nil overridingObject:[self pxDelegate]];
-        objc_setAssociatedObject(self, &PX_DATASOURCE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, &PX_CV_DATASOURCE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
     return proxy;
