@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "48D7865CB14B360DD65A4244D2073C7280692FB5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AD82F104BBA613F0BC7652067BB803ABB1B8B19D" : 0,
+    "48D7865CB14B360DD65A4244D2073C7280692FB5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ECEC628A-72AB-4933-BA52-0A555523024E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AD82F104BBA613F0BC7652067BB803ABB1B8B19D" : "pixate-freestyle-iossubmodules\/pixate-expression-machine",
+    "48D7865CB14B360DD65A4244D2073C7280692FB5" : "pixate-freestyle-ios"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "pixate-freestyle",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "src\/pixate-freestyle.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Fedos\/pixate-freestyle-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "48D7865CB14B360DD65A4244D2073C7280692FB5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Pixate\/pixate-expression-machine.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AD82F104BBA613F0BC7652067BB803ABB1B8B19D"
+    }
+  ]
+}
