@@ -33,6 +33,12 @@
 #import "UINavigationItem+PXStyling.h"
 #import "UIColor+PXColors.h"
 
+//! Project version number for PixateFreestyle.
+FOUNDATION_EXPORT double PixateFreestyleVersionNumber;
+
+//! Project version string for PixateFreestyle.
+FOUNDATION_EXPORT const unsigned char PixateFreestyleVersionString[];
+
 /**
  * This is the main entry point into the Pixate Engine
  */
