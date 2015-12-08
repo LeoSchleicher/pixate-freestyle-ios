@@ -23,6 +23,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 /**
  *  An enumeration indicating the styling mode
