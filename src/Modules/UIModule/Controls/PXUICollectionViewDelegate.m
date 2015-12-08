@@ -66,7 +66,12 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return [[((PXProxy *)collectionView.dataSource) baseObject] collectionView:collectionView numberOfItemsInSection:section];
+    id baseObject = collectionView.dataSource;
+
+    while ([baseObject isProxy])
+        baseObject = [((PXProxy *) baseObject) baseObject];
+
+    return [baseObject collectionView:collectionView numberOfItemsInSection:section];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
