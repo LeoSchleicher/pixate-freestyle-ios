@@ -23,6 +23,8 @@
 //
 
 // Make the readonly public properties writable by us
+#import "PixateFreestyle.h"
+
 @interface PixateFreestyle()
 
 @property (nonatomic, strong, readwrite) NSString *version;

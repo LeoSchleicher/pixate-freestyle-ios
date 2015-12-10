@@ -22,16 +22,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-#import "PXStylesheet.h"
-#import "PixateFreestyleConfiguration.h"
-
-#import "UIView+PXStyling.h"
-#import "NSDictionary+PXCSSEncoding.h"
-#import "UIBarButtonItem+PXStyling.h"
-#import "UITabBarItem+PXStyling.h"
-#import "UINavigationItem+PXStyling.h"
-#import "UIColor+PXColors.h"
+#import <PixateFreestyle/PXVirtualControl.h>
+#import <PixateFreestyle/PXStyleable.h>
+#import <PixateFreestyle/UIColor+PXColors.h>
+#import <PixateFreestyle/UINavigationItem+PXStyling.h>
+#import <PixateFreestyle/UITabBarItem+PXStyling.h>
+#import <PixateFreestyle/UIBarButtonItem+PXStyling.h>
+#import <PixateFreestyle/NSDictionary+PXCSSEncoding.h>
+#import <PixateFreestyle/UIView+PXStyling.h>
+#import <PixateFreestyle/PixateFreestyleConfiguration.h>
+#import <PixateFreestyle/PXStylesheet.h>
+#import <PixateFreestyle/PixateFreestyleConfiguration.h>
+#import <PixateFreestyle/PXStyleUtils.h>
+#import <PixateFreestyle/PXViewUtils.h>
+#import <PixateFreestyle/PXRuleSet.h>
 
 //! Project version number for PixateFreestyle.
 FOUNDATION_EXPORT double PixateFreestyleVersionNumber;
