@@ -1189,7 +1189,6 @@
 		9C98684E18C04C4700C71922 /* PixateFreestyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98684C18C04C4700C71922 /* PixateFreestyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98684F18C04C4700C71922 /* PixateFreestyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98684D18C04C4700C71922 /* PixateFreestyle.m */; };
 		9F6EE62A1C15D83F00B10403 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6EE6291C15D83F00B10403 /* Info.plist */; };
-		9F6EE62B1C15D83F00B10403 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6EE6291C15D83F00B10403 /* Info.plist */; };
 		9F6EE62C1C15D88D00B10403 /* MABaseFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047118DA126300969D18 /* MABaseFuture.h */; };
 		9F6EE62D1C15D88D00B10403 /* MACompoundFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047318DA126300969D18 /* MACompoundFuture.h */; };
 		9F6EE62E1C15D88D00B10403 /* MAFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047518DA126300969D18 /* MAFuture.h */; };
@@ -5889,7 +5888,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6EE62B1C15D83F00B10403 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

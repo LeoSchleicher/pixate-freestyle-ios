@@ -310,10 +310,10 @@ didStartElement:(NSString *)elementName
     // set viewport
     if (parts.count == 4)
     {
-        x = [[parts objectAtIndex:0] floatValue];
-        y = [[parts objectAtIndex:1] floatValue];
-        width = [[parts objectAtIndex:2] floatValue];
-        height = [[parts objectAtIndex:3] floatValue];
+        x = [(NSString *)[parts objectAtIndex:0] floatValue];
+        y = [(NSString *)[parts objectAtIndex:1] floatValue];
+        width = [(NSString *)[parts objectAtIndex:2] floatValue];
+        height = [(NSString *)[parts objectAtIndex:3] floatValue];
 
         // NOTE: we ignore any specified width/height on this branch because the view containing
         // this SVG will have it's own width and height. We probably shouldn't do that, but so
@@ -856,8 +856,8 @@ didStartElement:(NSString *)elementName
 
     for (int i = 0; i < length; i += 2)
     {
-        CGFloat x = [[coords objectAtIndex:i] floatValue];
-        CGFloat y = [[coords objectAtIndex:i + 1] floatValue];
+        CGFloat x = [(NSString *)[coords objectAtIndex:i] floatValue];
+        CGFloat y = [(NSString *)[coords objectAtIndex:i + 1] floatValue];
 
         [points addObject:[NSValue valueWithCGPoint:CGPointMake(x, y)]];
     }
