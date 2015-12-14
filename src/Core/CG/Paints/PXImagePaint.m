@@ -24,7 +24,6 @@
 
 #import "PXImagePaint.h"
 #import "PXShapeView.h"
-#import "MAFuture.h"
 
 @implementation PXImagePaint
 
@@ -60,7 +59,7 @@
 
 - (UIImage *)imageForBounds:(CGRect)bounds
 {
-    UIImage *image = nil;
+    __block UIImage *image = nil;
 
     if (_imageURL)
     {
@@ -82,35 +81,34 @@
             }
             else
             {
-                // Use a background 'future' to load the data
-                NSData *data = MABackgroundFuture(^{
-                    NSData *result = [NSData dataWithContentsOfURL:_imageURL];
-                    // Shouldn't return nil from a future
-                    return result ? result : [[NSData alloc] init];
+                dispatch_async(dispatch_get_global_queue(0, 0), ^{
+                    NSData *data = [NSData dataWithContentsOfURL:_imageURL] ?: [[NSData alloc] init];
+
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        CGFloat scale;
+
+                        if ([@"data" isEqualToString:_imageURL.scheme])
+                        {
+                            scale = [UIScreen mainScreen].scale;
+                        }
+                        else
+                        {
+                            NSString *filename = _imageURL.lastPathComponent;
+                            NSString *basename = [filename stringByDeletingPathExtension];
+
+                            scale = [basename hasSuffix:@"@2x"] ? 2.0f : 1.0f;  // TODO: pull out number and use that?
+                        }
+
+                        // grab image
+                        image = [[UIImage alloc] initWithData:data scale:scale];
+                        
+                        // log error
+                        if(image == nil)
+                        {
+                            NSLog(@"Nil image for URL %@", _imageURL);
+                        }
+                    });
                 });
-
-                CGFloat scale;
-
-                if ([@"data" isEqualToString:_imageURL.scheme])
-                {
-                    scale = [UIScreen mainScreen].scale;
-                }
-                else
-                {
-                    NSString *filename = _imageURL.lastPathComponent;
-                    NSString *basename = [filename stringByDeletingPathExtension];
-
-                    scale = [basename hasSuffix:@"@2x"] ? 2.0f : 1.0f;  // TODO: pull out number and use that?
-                }
-
-                // grab image
-                image = [[UIImage alloc] initWithData:data scale:scale];
-                
-                // log error
-                if(image == nil)
-                {
-                    NSLog(@"Nil image for URL %@", _imageURL);
-                }
             }
             
             // resize, if necessary

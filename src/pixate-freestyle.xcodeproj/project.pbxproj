@@ -16,24 +16,7 @@
 		0AC10E891A783DA700FA95C9 /* PXParserBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC10E861A783DA700FA95C9 /* PXParserBase.m */; };
 		9C08810C18BE9ECA0079A71B /* libpixate-freestyle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C84A63A18AE9CB600E7CDA7 /* libpixate-freestyle.a */; };
 		9C0B706818C52EEA00D2E7FD /* Version.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4DB80218AEA48000AE80B2 /* Version.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C23047D18DA126300969D18 /* MABaseFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047118DA126300969D18 /* MABaseFuture.h */; };
-		9C23047E18DA126300969D18 /* MABaseFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047218DA126300969D18 /* MABaseFuture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9C23048018DA126300969D18 /* MACompoundFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047318DA126300969D18 /* MACompoundFuture.h */; };
-		9C23048118DA126300969D18 /* MACompoundFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047418DA126300969D18 /* MACompoundFuture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9C23048318DA126300969D18 /* MAFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047518DA126300969D18 /* MAFuture.h */; };
-		9C23048418DA126300969D18 /* MAFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047618DA126300969D18 /* MAFuture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9C23048618DA126300969D18 /* MAFutureInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047718DA126300969D18 /* MAFutureInternal.h */; };
-		9C23048718DA126300969D18 /* MAMethodSignatureCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047818DA126300969D18 /* MAMethodSignatureCache.h */; };
-		9C23048818DA126300969D18 /* MAMethodSignatureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047918DA126300969D18 /* MAMethodSignatureCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9C23048A18DA126300969D18 /* MAProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047A18DA126300969D18 /* MAProxy.h */; };
-		9C23048B18DA126300969D18 /* MAProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047B18DA126300969D18 /* MAProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9C23049618DA27CE00969D18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C84A63D18AE9CB600E7CDA7 /* Foundation.framework */; };
-		9C2304A118DA280100969D18 /* tester.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047C18DA126300969D18 /* tester.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9C2304A218DA285200969D18 /* MABaseFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047218DA126300969D18 /* MABaseFuture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9C2304A318DA285200969D18 /* MACompoundFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047418DA126300969D18 /* MACompoundFuture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9C2304A418DA285200969D18 /* MAFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047618DA126300969D18 /* MAFuture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9C2304A518DA285200969D18 /* MAMethodSignatureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047918DA126300969D18 /* MAMethodSignatureCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9C2304A618DA285200969D18 /* MAProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047B18DA126300969D18 /* MAProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9C31780B18BE936B00F4B79D /* ImageBasedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3174FF18BE936A00F4B79D /* ImageBasedTests.m */; };
 		9C31780C18BE936B00F4B79D /* PXShapeRenderingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C31750018BE936A00F4B79D /* PXShapeRenderingTests.m */; };
 		9C31780D18BE936B00F4B79D /* PXSVGRenderingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C31750118BE936A00F4B79D /* PXSVGRenderingTests.m */; };
@@ -1189,12 +1172,6 @@
 		9C98684E18C04C4700C71922 /* PixateFreestyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98684C18C04C4700C71922 /* PixateFreestyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98684F18C04C4700C71922 /* PixateFreestyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98684D18C04C4700C71922 /* PixateFreestyle.m */; };
 		9F6EE62A1C15D83F00B10403 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6EE6291C15D83F00B10403 /* Info.plist */; };
-		9F6EE62C1C15D88D00B10403 /* MABaseFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047118DA126300969D18 /* MABaseFuture.h */; };
-		9F6EE62D1C15D88D00B10403 /* MACompoundFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047318DA126300969D18 /* MACompoundFuture.h */; };
-		9F6EE62E1C15D88D00B10403 /* MAFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047518DA126300969D18 /* MAFuture.h */; };
-		9F6EE62F1C15D88D00B10403 /* MAFutureInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047718DA126300969D18 /* MAFutureInternal.h */; };
-		9F6EE6301C15D88D00B10403 /* MAMethodSignatureCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047818DA126300969D18 /* MAMethodSignatureCache.h */; };
-		9F6EE6311C15D88D00B10403 /* MAProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047A18DA126300969D18 /* MAProxy.h */; };
 		9F6EE6321C15D88D00B10403 /* NSObject+PXSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98677B18C04A9800C71922 /* NSObject+PXSubclass.h */; };
 		9F6EE6331C15D88D00B10403 /* NSObject+PXClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98677918C04A5100C71922 /* NSObject+PXClass.h */; };
 		9F6EE6341C15D88D00B10403 /* NSObject+PXSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9620A418F02F0200219C5C /* NSObject+PXSwizzle.h */; };
@@ -1411,11 +1388,6 @@
 		9F6EE7071C15D91600B10403 /* UITabBarItem+PXStyling.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9867E618C04BA000C71922 /* UITabBarItem+PXStyling.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F6EE7081C15D91800B10403 /* PixateFreestyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98684C18C04C4700C71922 /* PixateFreestyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F6EE7091C15D91900B10403 /* Version.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4DB80218AEA48000AE80B2 /* Version.h */; };
-		9F6EE70A1C15DB6C00B10403 /* MABaseFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047218DA126300969D18 /* MABaseFuture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F6EE70B1C15DB6C00B10403 /* MACompoundFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047418DA126300969D18 /* MACompoundFuture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F6EE70C1C15DB6C00B10403 /* MAFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047618DA126300969D18 /* MAFuture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F6EE70D1C15DB6C00B10403 /* MAMethodSignatureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047918DA126300969D18 /* MAMethodSignatureCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F6EE70E1C15DB6C00B10403 /* MAProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C23047B18DA126300969D18 /* MAProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9F6EE70F1C15DB6C00B10403 /* NSObject+PXSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98677C18C04A9800C71922 /* NSObject+PXSubclass.m */; };
 		9F6EE7101C15DB6C00B10403 /* NSObject+PXSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9620A518F02F0200219C5C /* NSObject+PXSwizzle.m */; };
 		9F6EE7111C15DB6C00B10403 /* NSMutableArray+StackAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98643618C0498F00C71922 /* NSMutableArray+StackAdditions.m */; };
@@ -1636,19 +1608,6 @@
 		0AC10E841A783DA700FA95C9 /* PXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXParser.h; sourceTree = "<group>"; };
 		0AC10E851A783DA700FA95C9 /* PXParserBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXParserBase.h; sourceTree = "<group>"; };
 		0AC10E861A783DA700FA95C9 /* PXParserBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXParserBase.m; sourceTree = "<group>"; };
-		9C23047018DA126300969D18 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9C23047118DA126300969D18 /* MABaseFuture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABaseFuture.h; sourceTree = "<group>"; };
-		9C23047218DA126300969D18 /* MABaseFuture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABaseFuture.m; sourceTree = "<group>"; };
-		9C23047318DA126300969D18 /* MACompoundFuture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACompoundFuture.h; sourceTree = "<group>"; };
-		9C23047418DA126300969D18 /* MACompoundFuture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACompoundFuture.m; sourceTree = "<group>"; };
-		9C23047518DA126300969D18 /* MAFuture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFuture.h; sourceTree = "<group>"; };
-		9C23047618DA126300969D18 /* MAFuture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAFuture.m; sourceTree = "<group>"; };
-		9C23047718DA126300969D18 /* MAFutureInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFutureInternal.h; sourceTree = "<group>"; };
-		9C23047818DA126300969D18 /* MAMethodSignatureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMethodSignatureCache.h; sourceTree = "<group>"; };
-		9C23047918DA126300969D18 /* MAMethodSignatureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMethodSignatureCache.m; sourceTree = "<group>"; };
-		9C23047A18DA126300969D18 /* MAProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAProxy.h; sourceTree = "<group>"; };
-		9C23047B18DA126300969D18 /* MAProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAProxy.m; sourceTree = "<group>"; };
-		9C23047C18DA126300969D18 /* tester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tester.m; sourceTree = "<group>"; };
 		9C23049518DA27CE00969D18 /* MAFutureTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MAFutureTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3174FE18BE936A00F4B79D /* ImageBasedTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBasedTests.h; sourceTree = "<group>"; };
 		9C3174FF18BE936A00F4B79D /* ImageBasedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBasedTests.m; sourceTree = "<group>"; };
@@ -2858,27 +2817,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9C23046F18DA126300969D18 /* MAFuture */ = {
-			isa = PBXGroup;
-			children = (
-				9C23047018DA126300969D18 /* LICENSE */,
-				9C23047118DA126300969D18 /* MABaseFuture.h */,
-				9C23047218DA126300969D18 /* MABaseFuture.m */,
-				9C23047318DA126300969D18 /* MACompoundFuture.h */,
-				9C23047418DA126300969D18 /* MACompoundFuture.m */,
-				9C23047518DA126300969D18 /* MAFuture.h */,
-				9C23047618DA126300969D18 /* MAFuture.m */,
-				9C23047718DA126300969D18 /* MAFutureInternal.h */,
-				9C23047818DA126300969D18 /* MAMethodSignatureCache.h */,
-				9C23047918DA126300969D18 /* MAMethodSignatureCache.m */,
-				9C23047A18DA126300969D18 /* MAProxy.h */,
-				9C23047B18DA126300969D18 /* MAProxy.m */,
-				9C23047C18DA126300969D18 /* tester.m */,
-			);
-			name = MAFuture;
-			path = "Third-Party/MAFuture";
-			sourceTree = "<group>";
-		};
 		9C3174FD18BE936A00F4B79D /* CG */ = {
 			isa = PBXGroup;
 			children = (
@@ -4393,7 +4331,6 @@
 		9C9865E218C0499000C71922 /* Kernel */ = {
 			isa = PBXGroup;
 			children = (
-				9C23046F18DA126300969D18 /* MAFuture */,
 				9C9865E318C0499000C71922 /* Categories */,
 				9C9865E418C0499000C71922 /* Utils */,
 			);
@@ -4622,17 +4559,14 @@
 				9C98660618C0499000C71922 /* PXSolidPaint.h in Headers */,
 				9C98670B18C0499000C71922 /* PXStylesheetTokenType.h in Headers */,
 				9C98670318C0499000C71922 /* PXNamedMediaExpression.h in Headers */,
-				9C23048318DA126300969D18 /* MAFuture.h in Headers */,
 				9C98681E18C04BA000C71922 /* PXUISegmentedControl.h in Headers */,
 				9C9867FA18C04BA000C71922 /* PXUIActionSheet.h in Headers */,
 				9C98667518C0499000C71922 /* PXStyleTreeInfo.h in Headers */,
 				9C98674818C0499000C71922 /* PXInsetStyler.h in Headers */,
-				9C23048A18DA126300969D18 /* MAProxy.h in Headers */,
 				9C98683218C04BA000C71922 /* PXUITextField.h in Headers */,
 				9C98680018C04BA000C71922 /* PXUICollectionView.h in Headers */,
 				9C98676B18C0499000C71922 /* PXProxy.h in Headers */,
 				9C98660218C0499000C71922 /* PXPaintGroup.h in Headers */,
-				9C23048718DA126300969D18 /* MAMethodSignatureCache.h in Headers */,
 				9C98664018C0499000C71922 /* PXFileFunctionLogFormatter.h in Headers */,
 				9C9867FE18C04BA000C71922 /* PXUIButton.h in Headers */,
 				9C98662418C0499000C71922 /* PXPie.h in Headers */,
@@ -4646,13 +4580,11 @@
 				9C98667118C0499000C71922 /* PXCacheManager.h in Headers */,
 				9C98680A18C04BA000C71922 /* PXUILabel.h in Headers */,
 				9C9865EE18C0499000C71922 /* PXForceLoadCGCategories.h in Headers */,
-				9C23048618DA126300969D18 /* MAFutureInternal.h in Headers */,
 				9C98660418C0499000C71922 /* PXRadialGradient.h in Headers */,
 				9C98670918C0499000C71922 /* PXStylesheetParser.h in Headers */,
 				9C98665518C0499000C71922 /* PXCharacterMatcher.h in Headers */,
 				9C98682C18C04BA000C71922 /* PXUITableViewCellContentView.h in Headers */,
 				9C98661518C0499000C71922 /* PXShadowPaint.h in Headers */,
-				9C23047D18DA126300969D18 /* MABaseFuture.h in Headers */,
 				9C98662F18C0499000C71922 /* PXShapeGroup.h in Headers */,
 				9C98666418C0499000C71922 /* PixateFreestyle-Private.h in Headers */,
 				0AC10E871A783DA700FA95C9 /* PXParser.h in Headers */,
@@ -4719,7 +4651,6 @@
 				9C98683418C04BA000C71922 /* PXUITextView.h in Headers */,
 				9C98681C18C04BA000C71922 /* PXUISearchBar.h in Headers */,
 				9C98675918C0499000C71922 /* PXTextShadowStyler.h in Headers */,
-				9C23048018DA126300969D18 /* MACompoundFuture.h in Headers */,
 				9C98676318C0499000C71922 /* PXFileUtils.h in Headers */,
 				9C98672518C0499000C71922 /* PXIdSelector.h in Headers */,
 				9C98664718C0499000C71922 /* DDASLLogger.h in Headers */,
@@ -5023,13 +4954,7 @@
 				9F6EE7031C15D90F00B10403 /* UIBarButtonItem+PXStyling-Private.h in Headers */,
 				9F6EE7051C15D91200B10403 /* UIBarItem+PXStyling.h in Headers */,
 				9F6EE7091C15D91900B10403 /* Version.h in Headers */,
-				9F6EE62E1C15D88D00B10403 /* MAFuture.h in Headers */,
-				9F6EE6311C15D88D00B10403 /* MAProxy.h in Headers */,
-				9F6EE6301C15D88D00B10403 /* MAMethodSignatureCache.h in Headers */,
-				9F6EE62F1C15D88D00B10403 /* MAFutureInternal.h in Headers */,
-				9F6EE62C1C15D88D00B10403 /* MABaseFuture.h in Headers */,
 				9F6EE6781C15D89700B10403 /* PXParser.h in Headers */,
-				9F6EE62D1C15D88D00B10403 /* MACompoundFuture.h in Headers */,
 				9F6EE67B1C15D89700B10403 /* PXSourceWriter.h in Headers */,
 				9F6EE6341C15D88D00B10403 /* NSObject+PXSwizzle.h in Headers */,
 				9F6EE6791C15D89700B10403 /* PXParserBase.h in Headers */,
@@ -5898,12 +5823,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C2304A218DA285200969D18 /* MABaseFuture.m in Sources */,
-				9C2304A318DA285200969D18 /* MACompoundFuture.m in Sources */,
-				9C2304A418DA285200969D18 /* MAFuture.m in Sources */,
-				9C2304A518DA285200969D18 /* MAMethodSignatureCache.m in Sources */,
-				9C2304A618DA285200969D18 /* MAProxy.m in Sources */,
-				9C2304A118DA280100969D18 /* tester.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5915,14 +5834,12 @@
 				0AC10E811A783D6800FA95C9 /* PXSourceWriter.m in Sources */,
 				9C98683118C04BA000C71922 /* PXUITableViewHeaderFooterView.m in Sources */,
 				9C98683518C04BA000C71922 /* PXUITextView.m in Sources */,
-				9C23048118DA126300969D18 /* MACompoundFuture.m in Sources */,
 				9C9867F718C04BA000C71922 /* PXMKMapView.m in Sources */,
 				9C98672E18C0499000C71922 /* PXPseudoClassSelector.m in Sources */,
 				9C98681118C04BA000C71922 /* PXUIPageControl.m in Sources */,
 				9C98660F18C0499000C71922 /* PXTransformTokenType.m in Sources */,
 				9C98663B18C0499000C71922 /* PXStrokeStroke.m in Sources */,
 				9C98672C18C0499000C71922 /* PXPseudoClassPredicate.m in Sources */,
-				9C23047E18DA126300969D18 /* MABaseFuture.m in Sources */,
 				9C98670818C0499000C71922 /* PXStylesheetLexer.m in Sources */,
 				9C98673118C0499000C71922 /* PXTypeSelector.m in Sources */,
 				9C98681F18C04BA000C71922 /* PXUISegmentedControl.m in Sources */,
@@ -6014,7 +5931,6 @@
 				9C98674B18C0499000C71922 /* PXLayoutStyler.m in Sources */,
 				9C98668718C0499000C71922 /* UIView+PXStyling.m in Sources */,
 				9C98671818C0499000C71922 /* PXSpecificity.m in Sources */,
-				9C23048418DA126300969D18 /* MAFuture.m in Sources */,
 				9C9867FD18C04BA000C71922 /* PXUIActivityIndicatorView.m in Sources */,
 				9C98675818C0499000C71922 /* PXTextContentStyler.m in Sources */,
 				9C98661918C0499000C71922 /* PXArrowRectangle.m in Sources */,
@@ -6039,7 +5955,6 @@
 				9C98673B18C0499000C71922 /* PXBarShadowStyler.m in Sources */,
 				9C9867F918C04BA000C71922 /* PXMPVolumeView.m in Sources */,
 				9C98660918C0499000C71922 /* PXSVGLoader.m in Sources */,
-				9C23048B18DA126300969D18 /* MAProxy.m in Sources */,
 				9C98670018C0499000C71922 /* PXMediaExpressionGroup.m in Sources */,
 				9C9866F618C0499000C71922 /* PXBorderInfo.m in Sources */,
 				9C98670418C0499000C71922 /* PXNamedMediaExpression.m in Sources */,
@@ -6080,7 +5995,6 @@
 				9C9866F818C0499000C71922 /* PXFontInfo.m in Sources */,
 				9C98673718C0499000C71922 /* PXAttributedTextStyler.m in Sources */,
 				9C9865ED18C0499000C71922 /* NSMutableArray+QueueAdditions.m in Sources */,
-				9C23048818DA126300969D18 /* MAMethodSignatureCache.m in Sources */,
 				9C9867EB18C04BA000C71922 /* PXKeyframe.m in Sources */,
 				9C98676818C0499000C71922 /* PXGestalt.m in Sources */,
 				9C98683718C04BA000C71922 /* PXUIToolbar.m in Sources */,
@@ -6142,11 +6056,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6EE70A1C15DB6C00B10403 /* MABaseFuture.m in Sources */,
-				9F6EE70B1C15DB6C00B10403 /* MACompoundFuture.m in Sources */,
-				9F6EE70C1C15DB6C00B10403 /* MAFuture.m in Sources */,
-				9F6EE70D1C15DB6C00B10403 /* MAMethodSignatureCache.m in Sources */,
-				9F6EE70E1C15DB6C00B10403 /* MAProxy.m in Sources */,
 				9F6EE70F1C15DB6C00B10403 /* NSObject+PXSubclass.m in Sources */,
 				9F6EE7101C15DB6C00B10403 /* NSObject+PXSwizzle.m in Sources */,
 				9F6EE7111C15DB6C00B10403 /* NSMutableArray+StackAdditions.m in Sources */,
