@@ -38,6 +38,7 @@
 #import <PixateFreestyle/PXStyleUtils.h>
 #import <PixateFreestyle/PXViewUtils.h>
 #import <PixateFreestyle/PXRuleSet.h>
+#import <PixateFreestyle/PXSpecificity.h>
 
 //! Project version number for PixateFreestyle.
 FOUNDATION_EXPORT double PixateFreestyleVersionNumber;

@@ -1285,7 +1285,7 @@
 		9F6EE6A01C15D8A700B10403 /* PXDeclaration.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98657A18C0499000C71922 /* PXDeclaration.h */; };
 		9F6EE6A11C15D8A800B10403 /* PXDeclarationContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98657C18C0499000C71922 /* PXDeclarationContainer.h */; };
 		9F6EE6A21C15D8A800B10403 /* PXRuleSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98657E18C0499000C71922 /* PXRuleSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F6EE6A31C15D8A900B10403 /* PXSpecificity.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98658018C0499000C71922 /* PXSpecificity.h */; };
+		9F6EE6A31C15D8A900B10403 /* PXSpecificity.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98658018C0499000C71922 /* PXSpecificity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F6EE6A41C15D8A900B10403 /* PXStyleable.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98658218C0499000C71922 /* PXStyleable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F6EE6A51C15D8AA00B10403 /* PXStylesheet-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98658318C0499000C71922 /* PXStylesheet-Private.h */; };
 		9F6EE6A61C15D8AB00B10403 /* PXStylesheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98658418C0499000C71922 /* PXStylesheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
