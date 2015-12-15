@@ -56,6 +56,7 @@
 #import <PixateFreestyle/PXMediaGroup.h>
 #import <PixateFreestyle/PXKeyframe.h>
 #import <PixateFreestyle/PXKeyframeBlock.h>
+#import <PixateFreestyle/PXParser.h>
 #import <PixateFreestyle/PXParserBase.h>
 #import <PixateFreestyle/PXStylesheetLexer.h>
 #import <PixateFreestyle/PXStylesheetLexeme.h>
