@@ -51,6 +51,16 @@
 #import <PixateFreestyle/PXSelector.h>
 #import <PixateFreestyle/PXSourceEmitter.h>
 #import <PixateFreestyle/PXSourceWriter.h>
+#import <PixateFreestyle/PXStylesheet-Private.h>
+#import <PixateFreestyle/PXStylesheetParser.h>
+#import <PixateFreestyle/PXMediaGroup.h>
+#import <PixateFreestyle/PXKeyframe.h>
+#import <PixateFreestyle/PXParserBase.h>
+#import <PixateFreestyle/PXStylesheetLexer.h>
+#import <PixateFreestyle/PXStylesheetLexeme.h>
+#import <PixateFreestyle/PXLexeme.h>
+#import <PixateFreestyle/PXMediaExpression.h>
+
 
 
 
