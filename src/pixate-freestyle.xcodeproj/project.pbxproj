@@ -1338,7 +1338,7 @@
 		9F6EE6D51C15D8D100B10403 /* PXAnimationPropertyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98678118C04BA000C71922 /* PXAnimationPropertyHandler.h */; };
 		9F6EE6D61C15D8D200B10403 /* PXKeyframe.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98678318C04BA000C71922 /* PXKeyframe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F6EE6D71C15D8D300B10403 /* PXKeyframeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98678518C04BA000C71922 /* PXKeyframeAnimation.h */; };
-		9F6EE6D81C15D8D400B10403 /* PXKeyframeBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98678718C04BA000C71922 /* PXKeyframeBlock.h */; };
+		9F6EE6D81C15D8D400B10403 /* PXKeyframeBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98678718C04BA000C71922 /* PXKeyframeBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F6EE6D91C15D8D500B10403 /* PXForceLoadControls.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98678B18C04BA000C71922 /* PXForceLoadControls.h */; };
 		9F6EE6DA1C15D8D600B10403 /* PXMKAnnotationContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98678D18C04BA000C71922 /* PXMKAnnotationContainerView.h */; };
 		9F6EE6DB1C15D8D700B10403 /* PXMKAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98678F18C04BA000C71922 /* PXMKAnnotationView.h */; };
@@ -4745,6 +4745,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6EE6771C15D89600B10403 /* PXLexeme.h in Headers */,
+				9F6EE6D81C15D8D400B10403 /* PXKeyframeBlock.h in Headers */,
 				9F6EE69A1C15D8A400B10403 /* PXStylesheetLexeme.h in Headers */,
 				9F6EE6961C15D8A200B10403 /* PXMediaExpression.h in Headers */,
 				9F6EE69B1C15D8A400B10403 /* PXStylesheetLexer.h in Headers */,
@@ -4913,7 +4914,6 @@
 				9F6EE6D31C15D8CF00B10403 /* PixateFreestyle-Private.h in Headers */,
 				9F6EE6D51C15D8D100B10403 /* PXAnimationPropertyHandler.h in Headers */,
 				9F6EE6D71C15D8D300B10403 /* PXKeyframeAnimation.h in Headers */,
-				9F6EE6D81C15D8D400B10403 /* PXKeyframeBlock.h in Headers */,
 				9F6EE6D91C15D8D500B10403 /* PXForceLoadControls.h in Headers */,
 				9F6EE6DA1C15D8D600B10403 /* PXMKAnnotationContainerView.h in Headers */,
 				9F6EE6DB1C15D8D700B10403 /* PXMKAnnotationView.h in Headers */,
