@@ -39,6 +39,16 @@
 #import <PixateFreestyle/PXViewUtils.h>
 #import <PixateFreestyle/PXRuleSet.h>
 #import <PixateFreestyle/PXSpecificity.h>
+#import <PixateFreestyle/PXTypeSelector.h>
+#import <PixateFreestyle/PXDeclarationContainer.h>
+#import <PixateFreestyle/PXDeclaration.h>
+#import <PixateFreestyle/PXPaint.h>
+#import <PixateFreestyle/PXShadow.h>
+#import <PixateFreestyle/PXDimension.h>
+#import <PixateFreestyle/PXOffsets.h>
+#import <PixateFreestyle/PXBorderInfo.h>
+#import <PixateFreestyle/PXShadowPaint.h>
+
 
 //! Project version number for PixateFreestyle.
 FOUNDATION_EXPORT double PixateFreestyleVersionNumber;
