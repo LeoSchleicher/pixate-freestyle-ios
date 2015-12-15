@@ -48,6 +48,10 @@
 #import <PixateFreestyle/PXOffsets.h>
 #import <PixateFreestyle/PXBorderInfo.h>
 #import <PixateFreestyle/PXShadowPaint.h>
+#import <PixateFreestyle/PXSelector.h>
+#import <PixateFreestyle/PXSourceEmitter.h>
+#import <PixateFreestyle/PXSourceWriter.h>
+
 
 
 //! Project version number for PixateFreestyle.
