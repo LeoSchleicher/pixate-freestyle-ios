@@ -62,9 +62,23 @@
 #import <PixateFreestyle/PXStylesheetLexeme.h>
 #import <PixateFreestyle/PXLexeme.h>
 #import <PixateFreestyle/PXMediaExpression.h>
-
-
-
+#import <PixateFreestyle/PXStylerContext.h>
+#import <PixateFreestyle/PXCacheManager.h>
+#import <PixateFreestyle/PXForceLoadPixateCategories.h>
+#import <PixateFreestyle/PXForceLoadStylingCategories.h>
+#import <PixateFreestyle/PXForceLoadVirtualCategories.h>
+#import <PixateFreestyle/PXForceLoadControls.h>
+#import <PixateFreestyle/PXForceLoadCGCategories.h>
+#import <PixateFreestyle/PXAnimationInfo.h>
+#import <PixateFreestyle/PXBoundable.h>
+#import <PixateFreestyle/PXBoxModel.h>
+#import <PixateFreestyle/PXPaintable.h>
+#import <PixateFreestyle/PXRenderable.h>
+#import <PixateFreestyle/PXShadowGroup.h>
+#import <PixateFreestyle/PXShape.h>
+#import <PixateFreestyle/PXShapeDocument.h>
+#import <PixateFreestyle/PXStrokeRenderer.h>
+#import <PixateFreestyle/PXStyleTreeInfo.h>
 
 //! Project version number for PixateFreestyle.
 FOUNDATION_EXPORT double PixateFreestyleVersionNumber;
