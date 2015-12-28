@@ -1,6 +1,0 @@
-framework module PixateFreestyle {
-  umbrella header "PixateFreestyle.h"
-
-  export *
-  module * { export * }
-}
