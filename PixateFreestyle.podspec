@@ -25,11 +25,11 @@ Pod::Spec.new do |s|
              LICENSE
   }
   s.author       = { "Pixate" => "info@pixate.com" }
-  s.platform     = :ios, '8.0'
-  s.source       = { :http => "https://github.com/Innometrics/pixate-freestyle-ios.git" }
-  #s.source_files = 'PixateFreestyle.framework/Versions/A/Headers/*.h'
-  #s.preserve_paths = 'PixateFreestyle.framework'
+  s.platform      = :ios, "8.0"
   s.frameworks = 'CoreText', 'QuartzCore', 'UIKit', 'CoreGraphics', 'PixateFreestyle'
-  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PixateFreestyle"' }
-  #s.prepare_command = 'open "http://www.pixate.com/docs/framework/ios/latest/getting-started/index.html#app_setup" || true'
+  s.source = {
+    :git => 'https://github.com/Innometrics/pixate-freestyle-ios.git',
+    :tag => 'v2.1.7'
+  }
+  s.ios.vendored_frameworks = 'PixateFreestyle.framework'
 end
