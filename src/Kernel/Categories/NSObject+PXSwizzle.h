@@ -1,6 +1,6 @@
 //
 //  NSObject+PXSwizzle.h
-//  pixate-freestyle
+//  PixateFreestyle
 //
 //  Created by Paul Colton on 4/5/14.
 //  Copyright (c) 2014 Pixate, Inc. All rights reserved.
