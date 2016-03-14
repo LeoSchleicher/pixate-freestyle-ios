@@ -3329,8 +3329,7 @@
 				9C98684D18C04C4700C71922 /* PixateFreestyle.m */,
 				9C4DB80218AEA48000AE80B2 /* Version.h */,
 			);
-			name = PixateFreestyle;
-			path = "PixateFreestyle";
+			path = PixateFreestyle;
 			sourceTree = "<group>";
 		};
 		9C84A65318AE9CB600E7CDA7 /* PixateFreestyleTests */ = {
@@ -3341,8 +3340,7 @@
 				9C3177EE18BE936B00F4B79D /* Styling */,
 				9C84A65418AE9CB600E7CDA7 /* Supporting Files */,
 			);
-			name = PixateFreestyleTests;
-			path = "PixateFreestyleTests";
+			path = PixateFreestyleTests;
 			sourceTree = "<group>";
 		};
 		9C84A65418AE9CB600E7CDA7 /* Supporting Files */ = {
@@ -4307,7 +4305,7 @@
 			dependencies = (
 			);
 			name = PixateFreestyleTests;
-			productName = "PixateFreestyleTests";
+			productName = PixateFreestyleTests;
 			productReference = 9C84A64A18AE9CB600E7CDA7 /* PixateFreestyleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
