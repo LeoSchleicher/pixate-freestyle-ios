@@ -291,7 +291,7 @@ static const char viewDelegate;
     BOOL stopDescending = NO;
 
     // loop until the queue is empty or we're told to stop
-    while (queue.count > 0 && !stop)
+    while (queue.count && !stop)
     {
         id<PXStyleable> current = [queue dequeue];
 
@@ -513,10 +513,17 @@ static const char viewDelegate;
 
     // Check to make sure this styleable has stylers we can use or if it has explictly asked
     // to not be styled
-    BOOL preventStyling =
-        ([styleable respondsToSelector:@selector(preventStyling)] && [styleable preventStyling]) ||
-        ([styleable respondsToSelector:@selector(viewStylers)] == NO);
-    
+    BOOL preventStyling;
+    @try {
+        if([styleable respondsToSelector:@selector(preventStyling)]) {
+            [styleable preventStyling];
+            preventStyling = YES;
+        }
+    }
+    @catch (NSException *exception) {
+        preventStyling = [styleable respondsToSelector:@selector(viewStylers)] == NO;
+    }
+
     // We prevent nested styling of a styleable by checking to see if it is currently being styled
     if (![viewsBeingStyled containsObject:styleable] && !preventStyling && styleable.styleMode != PXStylingNone)
     {

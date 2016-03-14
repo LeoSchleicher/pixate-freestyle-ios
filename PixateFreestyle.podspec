@@ -1,7 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "PixateFreestyle"
   s.version      = "2.1.7"
+  s.platform      = :ios, "8.0"
   s.summary      = "Style your iOS app with CSS, using 100% native code and no webviews."
+  s.author       = { "Pixate" => "info@pixate.com" }
   s.description  = <<-DESC
                    Pixate is an iOS framework that allows you to style your application using stylesheets and a CSS-like syntax. Pixate lets you build  beautiful applications with less code and more flexibility by using familiar CSS markup to style native controls and components. Free up your team to focus on creating amazing user experiences throughout the design and development cycle.
                    DESC
@@ -24,12 +26,11 @@ Pod::Spec.new do |s|
               limitations under the License.
              LICENSE
   }
-  s.author       = { "Pixate" => "info@pixate.com" }
-  s.platform      = :ios, "8.0"
-  s.frameworks = 'CoreText', 'QuartzCore', 'UIKit', 'CoreGraphics', 'PixateFreestyle'
+  s.frameworks = 'CoreText', 'QuartzCore', 'UIKit', 'CoreGraphics'
+  s.libraries = 'xml2', 'sqlite3'
   s.source = {
     :git => 'https://github.com/Innometrics/pixate-freestyle-ios.git',
     :tag => 'v2.1.7'
   }
-  s.ios.vendored_frameworks = 'PixateFreestyle.framework'
+  s.vendored_frameworks = 'PixateFreestyle.framework'
 end
