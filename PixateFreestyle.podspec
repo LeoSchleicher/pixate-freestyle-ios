@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "PixateFreestyle"
   s.version      = "2.1.7"
-  s.platform      = :ios, "8.0"
+  s.platform      = :ios, "7.0"
   s.summary      = "Style your iOS app with CSS, using 100% native code and no webviews."
   s.author       = { "Pixate" => "info@pixate.com" }
   s.description  = <<-DESC
